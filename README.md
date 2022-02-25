@@ -14,57 +14,39 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `Steps to execute`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. npm install
+2. npm start
+3. App will start running at https://localhost:3000/
+4. By default it will be navigated to https://localhost:3000/login
 
-### `npm run build`
+## `Functionalities`
+  1.  A login page, on click of login use gmail or facebook API to allow user to login.
+![image](https://user-images.githubusercontent.com/37163292/155758753-6e8e7501-80a0-4c78-8aa4-d5fd0cf07f6f.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ 
+  2. Once logged in, display user details(which you get from facebook or gmail) at the header of the page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+      Right top - User name will be displayed - on click of user name, the logout option will be there for the user to logout from the current session.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ![image](https://user-images.githubusercontent.com/37163292/155758826-99194683-f914-4cb7-855b-981fa7dd33e2.png)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  3. Create two components and use react router to render those components based on the router path(user name should be displayed right top with logout option in every page)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+·        The first component will have some static table data
+![image](https://user-images.githubusercontent.com/37163292/155758866-b138b4ad-9339-41b4-9467-28478e94cc83.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+·        The second component will have some json data.
+![image](https://user-images.githubusercontent.com/37163292/155758936-288627dc-472a-4a28-9392-11258c83a8d9.png)
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  4. Enable the idle timeout of 60 seconds for the logged in user. After 59 seconds, the prompt will get enabled for the user with message "Do want to continue?" with "Continue" button. if there is no user response, then automatic logout should happen after 60 seconds.
+  ![image](https://user-images.githubusercontent.com/37163292/155759332-412e059d-cc05-418c-a7b3-bc0b71f35fc8.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
